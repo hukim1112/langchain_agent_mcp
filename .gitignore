@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Environment
+.env
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# Agent runtime outputs (test results, generated code, cost logs)
+artifacts/results/
+artifacts/code/
+agent_cost_log.json
+
+# MCP 데이터 (gdown으로 다운로드 — download_data.sh 사용)
+# 벡터스토어 바이너리, SQLite DB, 추출 이미지 등 대용량 파일 제외
+mcp/report_db/
+mcp/sqlite/
+mcp/papers_rag/
+
+# Misc
+*.log
+.gemini/
+my_quotes_profile/
