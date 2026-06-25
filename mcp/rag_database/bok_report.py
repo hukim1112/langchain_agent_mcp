@@ -55,7 +55,11 @@ def get_retriever(
     ]
 
     # 3. 문서 내용 설명
-    document_content_description = "한국은행에서 발간한 한국의 주요 8대 업종 분기별 동향 보고서"
+    document_content_description = (
+        "한국은행에서 발간한 한국의 주요 8대 업종 분기별 동향 보고서. "
+        "IMPORTANT: Filter values for 'year' and 'quarter' must always be "
+        "integers (e.g., 2024, 1), NEVER strings (e.g., \"2024\", \"1\")."
+    )
 
     # 4. LLM 초기화
     llm = ChatOpenAI(model=model_name, temperature=temperature)
