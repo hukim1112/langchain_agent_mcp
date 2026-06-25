@@ -132,4 +132,4 @@ streamlit run app/ui.py
 **[Mission.md](Mission.md)** 파일에 Step-by-step 미션 가이드가 정리되어 있습니다.
 
 `main` 브랜치의 현재 상태에서 출발하여, 4단계 미션을 순서대로 완료하세요.
-정답은 `instructor` 브랜치에서 확인할 수 있습니다.
+예제 코드는 `instructor` 브랜치에서 확인할 수 있습니다.
