@@ -14,7 +14,7 @@ AGENT_REGISTRY = [
     {
         "name": "mcp_agent",
         "module": "app.agents.mcp_agent",
-        "prefix": "/mcp",
+        "prefix": "/mcp_agent",
         "tags": ["MCP"],
         "description": "MCP 서버를 동적으로 탐색하고 호출하여 외부 데이터를 검색·분석하는 에이전트"
     },
