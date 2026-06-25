@@ -12,6 +12,13 @@ AGENT_REGISTRY = [
         "description": "전체 수집 프로세스를 조율하고 네비게이터와 코더를 지휘하는 감독 에이전트"
     },
     {
+        "name": "mcp_agent",
+        "module": "app.agents.mcp_agent",
+        "prefix": "/mcp",
+        "tags": ["MCP"],
+        "description": "MCP 서버를 동적으로 탐색하고 호출하여 외부 데이터를 검색·분석하는 에이전트"
+    },
+    {
         "name": "coder",
         "module": "app.agents.coder",
         "prefix": "/coder",
