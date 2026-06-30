@@ -1,4 +1,4 @@
-﻿# 🎯 Mission Guide
+# 🎯 Mission Guide
 
 이 문서는 `main` 브랜치를 기준으로, 교육생이 직접 수행해야 하는 미션을 안내합니다.
 
@@ -57,6 +57,8 @@ def get_user_name() -> str:
     return "홍길동"
 ```
 
+도구 팩토리 : `app/tools/__init__.py`에서 get_user_name을 import 합니다.
+
 #### 2) 커스텀 에이전트 모듈 생성 (`app/agents/simple_agent.py`)
 `app/agents/chatbot.py`나 `app/agents/coder.py` 구조를 참고하여 간단한 챗봇 에이전트를 설계합니다. 시스템 프롬프트에 위에서 생성한 도구를 반드시 사용하라는 내용을 기술합니다.
 
@@ -82,7 +84,7 @@ agent_executor = create_simple_agent()
 ```
 
 #### 3) 에이전트 레지스트리에 등록 (`app/agents/__init__.py`)
-`app/agents/__init__.py` 파일의 `AGENT_REGISTRY` 리스트에 위에서 만든 에이전트 정보를 추가합니다.
+에이전트 팩토리 : `app/agents/__init__.py` 파일의 `AGENT_REGISTRY` 리스트에 위에서 만든 에이전트 정보를 추가합니다.
 
 ```python
     {
