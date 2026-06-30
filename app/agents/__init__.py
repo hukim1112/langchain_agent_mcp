@@ -9,7 +9,7 @@ AGENT_REGISTRY = [
         "module": "app.agents.supervisor",
         "prefix": "/supervisor",
         "tags": ["Supervisor"],
-        "description": "전체 수집 프로세스를 조율하고 네비게이터와 코더를 지휘하는 감독 에이전트"
+        "description": "하위 에이전트들로 문제를 해결하는 감독 에이전트"
     },
     {
         "name": "mcp_agent",
